@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify;
+namespace jorgeperaza2000\Notify;
 
 use Illuminate\View\Component;
 

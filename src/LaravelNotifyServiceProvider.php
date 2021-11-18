@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify;
+namespace jorgeperaza2000\Notify;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;
@@ -51,7 +51,7 @@ class LaravelNotifyServiceProvider extends ServiceProvider
     public function registerPublishables(): void
     {
         $this->publishes([
-            __DIR__.'/../public' => public_path('vendor/mckenziearts/laravel-notify'),
+            __DIR__.'/../public' => public_path('vendor/jorgeperaza2000/laravel-notify-plus'),
         ], 'notify-assets');
 
         $this->publishes([

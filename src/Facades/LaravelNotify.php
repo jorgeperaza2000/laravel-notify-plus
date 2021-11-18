@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify\Facades;
+namespace jorgeperaza2000\Notify\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

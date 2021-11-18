@@ -1,6 +1,6 @@
 <?php
 
-use Mckenziearts\Notify\LaravelNotify;
+use jorgeperaza2000\Notify\LaravelNotify;
 
 if (! function_exists('notify')) {
     function notify(string $message = null, string $title = null): LaravelNotify
@@ -48,7 +48,7 @@ if (! function_exists('notifyJs')) {
      */
     function notifyJs(): string
     {
-        return '<script type="text/javascript" src="'.asset('vendor/mckenziearts/laravel-notify/js/notify.js').'"></script>';
+        return '<script type="text/javascript" src="'.asset('vendor/jorgeperaza2000/laravel-notify-plus/js/notify.js').'"></script>';
     }
 }
 
@@ -58,6 +58,6 @@ if (! function_exists('notifyCss')) {
      */
     function notifyCss(): string
     {
-        return '<link rel="stylesheet" type="text/css" href="'.asset('vendor/mckenziearts/laravel-notify/css/notify.css').'"/>';
+        return '<link rel="stylesheet" type="text/css" href="'.asset('vendor/jorgeperaza2000/laravel-notify-plus/css/notify.css').'"/>';
     }
 }

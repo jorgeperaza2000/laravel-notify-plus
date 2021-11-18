@@ -1,6 +1,6 @@
 <?php
 
-namespace Mckenziearts\Notify\Storage;
+namespace jorgeperaza2000\Notify\Storage;
 
 use Illuminate\Session\Store;
 
