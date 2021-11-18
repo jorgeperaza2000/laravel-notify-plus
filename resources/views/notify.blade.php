@@ -29,7 +29,7 @@
                     </p>
                     <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
                         <div class="rounded-md shadow">
-                            <a href="https://github.com/mckenziearts/laravel-notify" class="flex items-center justify-center w-full px-6 py-3 text-base font-medium leading-5 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent rounded-md hover:bg-pink-500 focus:outline-none focus:shadow-outline-red md:py-4 md:text-lg md:px-10">
+                            <a href="https://github.com/jorgeperaza2000/laravel-notify-plus" class="flex items-center justify-center w-full px-6 py-3 text-base font-medium leading-5 text-white transition duration-150 ease-in-out bg-pink-600 border border-transparent rounded-md hover:bg-pink-500 focus:outline-none focus:shadow-outline-red md:py-4 md:text-lg md:px-10">
                                 Getting Started
                             </a>
                         </div>
@@ -46,7 +46,7 @@
                         <rect x="118" width="404" height="784" fill="url(#4f4f415c-a0e9-44c2-9601-6ded5a34a13e)"></rect>
                     </svg>
                     <div class="mt-32 md:mt-0 relative mx-auto w-full rounded-lg lg:max-w-md">
-                        <img class="animate-bounce relative mx-auto" width="490" src="{{ asset('/vendor/mckenziearts/laravel-notify/images/notifications.png') }}" alt="">
+                        <img class="animate-bounce relative mx-auto" width="490" src="{{ asset('/vendor/jorgeperaza2000/laravel-notify-plus/images/notifications.png') }}" alt="">
                     </div>
                 </div>
             </div>
@@ -403,7 +403,7 @@
                         <div class="mt-4">
                             <div class="max-w-sm w-full bg-white shadow-lg rounded-md pointer-events-auto">
                                 <div class="h-48 relative rounded-md shadow-xs overflow-hidden">
-                                    <img class="absolute inset-0" src="{{ asset('/vendor/mckenziearts/laravel-notify/images/drake-success.jpg') }}" alt="">
+                                    <img class="absolute inset-0" src="{{ asset('/vendor/jorgeperaza2000/laravel-notify-plus/images/drake-success.jpg') }}" alt="">
                                     <div class="bg-green-500 absolute inset-0 opacity-75"></div>
                                     <div class="p-4 relative z-10">
                                         <div class="flex items-start">
@@ -439,7 +439,7 @@
                         <div class="mt-4">
                             <div class="max-w-sm w-full bg-white shadow-lg rounded-md pointer-events-auto">
                                 <div class="h-48 relative rounded-md shadow-xs overflow-hidden">
-                                    <img class="absolute inset-0" src="{{ asset('/vendor/mckenziearts/laravel-notify/images/drake-error.jpg') }}" alt="">
+                                    <img class="absolute inset-0" src="{{ asset('/vendor/jorgeperaza2000/laravel-notify-plus/images/drake-error.jpg') }}" alt="">
                                     <div class="bg-red-500 absolute inset-0 opacity-75"></div>
                                     <div class="p-4 relative z-10">
                                         <div class="flex justify-end">
