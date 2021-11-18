@@ -168,7 +168,10 @@ class LaravelNotify
             $overrideValues['type'] ?? $presetValues['type'] ?? null,
             $overrideValues['icon'] ?? $presetValues['icon'] ?? null,
             $overrideValues['model'] ?? $presetValues['model'] ?? null,
-            $overrideValues['title'] ?? $presetValues['title'] ?? null
+            $overrideValues['title'] ?? $presetValues['title'] ?? null,
+            $overrideValues['undo'] ?? $presetValues['undo'] ?? null,
+            $overrideValues['path'] ?? $presetValues['path'] ?? null,
+            $overrideValues['btnText'] ?? $presetValues['btnText'] ?? null
         );
 
         return $this;
@@ -185,7 +188,7 @@ class LaravelNotify
      *
      * @return void
      */
-    public function flash(string $message, $type = null, $icon = null, string $model = null, string $title = null): void
+    public function flash(string $message, $type = null, $icon = null, string $model = null, string $title = null, $undo = false, $path = null, $btnText = null): void
     {
         $notifications = [
             'message' => $message,
@@ -193,6 +196,9 @@ class LaravelNotify
             'icon'    => $icon,
             'model'   => $model,
             'title'   => $title,
+            'undo'   => $undo,
+            'path'   => $path,
+            'btnText'   => $btnText,
         ];
 
         $this->session->flash('notify', $notifications);
@@ -216,5 +222,20 @@ class LaravelNotify
     public function type(): string
     {
         return $this->session->get('notify.type');
+    }
+
+    public function undo(): bool
+    {
+        return $this->session->get('notify.undo');
+    }
+
+    public function path(): string
+    {
+        return $this->session->get('notify.path');
+    }
+
+    public function btnText(): string
+    {
+        return $this->session->get('notify.btnText');
     }
 }
