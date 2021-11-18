@@ -1,10 +1,10 @@
 <p align="center"><img src="https://laravel.cm/img/brand/laravel-notify.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/mckenziearts/laravel-notify"><img src="https://img.shields.io/travis/mckenziearts/laravel-notify/master.svg?style=flat-square" alt="Build Status"></a>
-<a href="https://packagist.org/packages/mckenziearts/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/mckenziearts/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/mckenziearts/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/license.svg" alt="License"></a>
+<a href="https://travis-ci.org/jorgeperaza2000/laravel-notify"><img src="https://img.shields.io/travis/mckenziearts/laravel-notify/master.svg?style=flat-square" alt="Build Status"></a>
+<a href="https://packagist.org/packages/jorgeperaza2000/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/d/total.svg" alt="Total Downloads"></a>
+<a href="https://packagist.org/packages/jorgeperaza2000/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/v/stable.svg" alt="Latest Stable Version"></a>
+<a href="https://packagist.org/packages/jorgeperaza2000/laravel-notify"><img src="https://poser.pugx.org/mckenziearts/laravel-notify/license.svg" alt="License"></a>
 </p>
 
 ## Introduction
@@ -20,8 +20,8 @@ A diverse range of notification design is available.
 
 | Version | Laravel version       |  Status         | Branch | Install                                             |
 |---------|-----------------------|-----------------|--------|-----------------------------------------------------|
-| 1.x     | 5.5, 5.6, 5.7, 6.0    | EOL             | 1.0    | composer require mckenziearts/laravel-notify 1.*    |
-| 2.x     | >= 7.0                | Latest          | 2.0    | composer require mckenziearts/laravel-notify        |
+| 1.x     | 5.5, 5.6, 5.7, 6.0    | EOL             | 1.0    | composer require jorgeperaza2000/laravel-notify-plus 1.*    |
+| 2.x     | >= 7.0                | Latest          | 2.0    | composer require jorgeperaza2000/laravel-notify-plus        |
 
 ## Android Version
 
@@ -32,7 +32,7 @@ If you need Android version please try this package [Aesthetic Dialogs](https://
 You can install the package using composer
 
 ```sh
-$ composer require mckenziearts/laravel-notify
+$ composer require jorgeperaza2000/laravel-notify-plus
 ```
 
 Then add the service provider to `config/app.php`. In Laravel versions 5.5 and beyond, this step can be skipped if package auto-discovery is enabled.
@@ -40,7 +40,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 ```php
 'providers' => [
     ...
-    Mckenziearts\Notify\LaravelNotifyServiceProvider::class
+    jorgeperaza2000\Notify\LaravelNotifyServiceProvider::class
     ...
 ];
 ```
@@ -48,7 +48,7 @@ Then add the service provider to `config/app.php`. In Laravel versions 5.5 and b
 You can publish the configuration file and assets by running:
 
 ```sh
-$ php artisan vendor:publish --provider="Mckenziearts\Notify\LaravelNotifyServiceProvider"
+$ php artisan vendor:publish --provider="jorgeperaza2000\Notify\LaravelNotifyServiceProvider"
 ```
 
 Now that we have published a few new files to our application we need to reload them with the following command:
@@ -231,8 +231,8 @@ license. Please see the [license file](license.md) for more information.
 [ico-downloads]: https://img.shields.io/packagist/dt/mckenziearts/laravel-notify.svg?style=flat-square
 [ico-travis]: https://img.shields.io/travis/mckenziearts/laravel-notify/master.svg?style=flat-square
 
-[link-packagist]: https://packagist.org/packages/mckenziearts/laravel-notify
-[link-downloads]: https://packagist.org/packages/mckenziearts/laravel-notify
-[link-travis]: https://travis-ci.org/mckenziearts/laravel-notify
+[link-packagist]: https://packagist.org/packages/jorgeperaza2000/laravel-notify-plus
+[link-downloads]: https://packagist.org/packages/jorgeperaza2000/laravel-notify-plus
+[link-travis]: https://travis-ci.org/jorgeperaza2000/laravel-notify
 [link-author]: https://arthurmonney.me
 [link-contributors]: ../../contributors
