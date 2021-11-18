@@ -50,11 +50,11 @@
                             <p class="mt-1 text-sm leading-5 @if(config('notify.theme') === 'light') text-gray-500 @else text-white @endif">
                                 {{ session()->get('notify.message') }}
                             </p>
-                            
-                                <p class="mt-1 text-sm leading-5 @if(config('notify.theme') === 'light') text-gray-500 @else text-white @endif">
-                                    <a href="{{ session()->get('notify.path') }}" class="">{{ session()->get('notify.btnText') }}</a>
+                            @if(session()->get('notify.undo'))
+                                <p class="text-center mt-2 leading-5 @if(config('notify.theme') === 'light') text-gray-500 @else text-white @endif">
+                                    <a href="{{ session()->get('notify.path') }}" class="btn btn-outline-info">{{ session()->get('notify.btnText') }}</a>
                                 </p>
-                            
+                            @endif
                         </div>
                         <div class="ml-4 flex-shrink-0 flex">
                             <button @click="show = false;" class="inline-flex text-gray-400 focus:outline-none focus:text-gray-500 transition ease-in-out duration-150">
